@@ -58,6 +58,8 @@ public class App {
         Book book = (Book)constructor.newInstance("myBook");
         System.out.println(book);
 
+        System.out.println("test");
+
         Field b = bookClass.getDeclaredField("B");
         b.setAccessible(true);
         System.out.println( b.get(book));
